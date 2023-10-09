@@ -1,0 +1,9 @@
+<form (ngSubmit)="saveString()" class="textForm">
+  <input type="text" id="inputText" name="inputText" class="form-control" [(ngModel)]="inputText" placeholder="Enter a string"/>
+  <button type="submit">Save</button>
+</form>
+
+<div *ngIf="savedString" class="dataContainer">
+  <h3>Saved Data:</h3>
+  <p>{{ savedString }}</p>
+</div>
